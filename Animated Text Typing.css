@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #000;
+}
+p{
+    color: white;
+    font-size: 2.5em;
+    position: relative;
+}
+#Typed_text{
+    color: crimson;
+}
+.cursor{
+    display: inline-block;
+    width: 3px;
+    background: white;
+    pointer-events: none;
+    user-select: none;
+    animation: cursor 1s linear infinite;
+}
+@keyframes cursor {
+    0%, 49%{
+        background: #ffffff;
+    }
+    51%, 99%{
+        background: transparent;
+    }
+    100%{
+        background: #ffffff;
+    }
+}
+.cursor.typing{
+    animation: none;
+}
