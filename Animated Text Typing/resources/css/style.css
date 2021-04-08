@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #000;
+}
+p{
+    font-size: 3em;
+    color: white;
+}
+#typed_text{
+    color: tomato;
+}
+.cursor{
+    display: inline-block;
+    width: 3px;
+    background: white;
+    animation: cursor 1s linear 0s infinite;
+}
+.cursor.typing{
+    animation: none;
+}
+@keyframes cursor {
+    0%, 50%{
+        background: white;
+    }
+    51%, 100%{
+        background: transparent;
+    }
+}
